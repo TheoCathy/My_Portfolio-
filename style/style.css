@@ -1,0 +1,93 @@
+html,body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.7em;
+    background-image: url(../background-ge9413a519_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center ;
+
+}
+ a{
+    text-decoration: none;
+    color: rgb(157, 26, 26);
+ }
+#navbar ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    background-color: rgb(127, 154, 181);
+    overflow: auto;
+    margin-top: 0%;
+    color: rgb(156, 32, 50);
+    
+}
+#navbar ul li {
+list-style: none;
+padding: 15px;
+
+}
+    
+    
+#navbar ul :hover{
+    background: rgb(245, 238, 202);
+    color: rgb(163, 114, 97)
+}
+h1{
+  color: rgb(224, 203, 175);
+  font-size: 2.2em;
+    font-style: italic;
+    margin-right: 20rem 0;
+    text-align: center;
+    padding: 20px;
+   
+}
+/* h2{
+ color: rgb(231, 195,16);
+ margin: 2rem;
+} */
+h3{
+    color: coral
+
+}
+p {
+    color: aliceblue;
+    text-align: center;
+}
+img{
+    width: 300px;
+    display: block;
+    /* justify-content: center;
+    /* margin left: 40rem;
+    margin right: 40rem ; */
+    margin: auto;
+     
+     
+    
+}
+/* for the Icon section */
+.svj{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px;
+      background-color: rgb(199, 164, 121);  
+    margin-top: 12px;
+}
+.svj a{
+    margin: 5px;
+    padding: 2px;
+}
+.svj a :hover{
+color: rgb(245, 238, 202);
+background-color: rgb(160, 150, 130);
+padding: 3px;
+}
+section{
+    margin: 0 50vh ;
+}
+#phone{
+    color: rgb(218, 238, 255);
+    
+} 

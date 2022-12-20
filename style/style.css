@@ -5,66 +5,140 @@ body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   line-height: 1.7em;
-  background-image: url(../background-ge9413a519_1920.jpg);
-  background-repeat: no-repeat;
+  /* background-image: url(../background-ge9413a519_1920.jpg); */
+  background-repeat: repeat;
   background-size: cover;
   background-position: center;
+  background-color: rgb(45, 59, 51);
+  /* background: linear-gradient( rgb(45, 59, 51), rgb(81, 131, 134)); */
+  scroll-behavior: smooth;
+  transition: 0.6s;
 }
+
 a {
   text-decoration: none;
-  color: rgb(155, 43, 43);
+  color: rgb(255, 251, 251);
+}
+header .sticky{
+  padding: 5px 100px;
+  background: rgba(181, 184, 193, 0.395);
 }
 #navbar ul {
   display: flex;
-  justify-content: space-around;
+  /* justify-content: space-between; */
   align-items: center;
-
-  background-color: rgb(127, 154, 181);
+  background-color: rgba(126, 139, 143, 0.766);
   overflow: auto;
   margin-top: 0%;
-  color: rgb(156, 32, 50);
+  color: rgb(255, 251, 251);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: 0.6s;
+  padding: 10px 80px; 
+  z-index: 100;
 }
 #navbar ul li {
   list-style: none;
-  padding: 15px;
+  justify-content: center;
+  align-items:center;
+  /* padding: 15px; */
+  color: #ffffff;
+  position: relative;
+  /* top: 0;
+  left: 0;
+  width: 100%; */
+  transition: all 0.6s;
+  /* padding: 40px 100px; */
+  display: flex;
+}
+
+#navbar ul li a{
+  position: relative;
+  margin: 0 15px;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-weight: 500px;
+  transition:  0.6s ;
+}
+header .sticky ul li a{
+  color: #000;
 }
 
 #navbar ul :hover {
-  background: rgb(233, 225, 188);
-  color: rgb(163, 114, 97);
-}
-h1 {
-  color: rgb(224, 203, 175);
-  font-size: 2.2em;
-  font-style: italic;
-  margin-right: 20rem 0;
-  text-align: center;
-  padding: 20px;
-}
-.intro p {
-  color: rgb(196, 144, 81);
+  /* background: rgb(233, 225, 188); */
+  /* color: rgb(243, 221, 113); */
+  color: rgb(224, 182, 175);
 }
 
-.intro h1 {
-  animation-name: intro;
-  animation-duration: 5s;
+#navbar a:is(:link, :active, :visited ).active{
+  color: azure;
+  background-color: blueviolet;
+}
+
+#navbar li a:is(:link, :active, :visited ).active{
+  color: azure;
+  text-decoration: none;
+  padding: 2px;
+}
+
+.banner{
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  ;
+}
+#intro{
+  /* animation-name: intro; */
+  /* animation-duration: 5s;
   animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  color: rgb(159, 50, 46);
-  font-size: 2.2em;
+  animation-timing-function: ease-in-out; */
+  display: flex;
+  /* justify-content: space-between; */
+}
+h2 {
+  color: rgb(224, 203, 175);
+  /* font-size: 2.2em; */
   font-style: italic;
   margin-right: 20rem 0;
   text-align: center;
   padding: 20px;
-  border-radius: 100%;
+  align-items: center;
+  margin-top: 170px;
 }
-@keyframes intro {
-  form {
-    background-color: rgb(86, 193, 255);
-  }
-  to {
-    background-color: rgba(6, 35, 97, 0.763);
-  }
+#intro p {
+  color: rgb(224, 182, 175);
+}
+
+#greetings{
+  font-style: italic;
+  margin: 100px 50px 20px 100px;
+  padding: 5px;
+  font-size: 2.7em;
+
+}
+#intro{
+  
+  /* color: rgb(238, 239, 218); */
+  font-size: 20px;
+  font-style: italic;
+  /* margin: 150px 50px 20px 100px; */
+  /* margin-right: 20rem 0; */
+  /* text-align: center; */
+  align-content: center;
+  /* padding: 20px; */
+  /* margin-top: 100px; */
+  /* border-radius: 100%; */
+}
+#welcome-note{
+ margin: 100px 30px 150px 200px;
+ width: 30%;
+ align-items: left;
+ padding: 10px;
+ transition:  0.6s;
+ justify-content: space-around;
+ /* display: grid; */
 }
 
 p {
@@ -73,13 +147,19 @@ p {
 }
 /* image section */
 .profile-pic {
-  display: flex;
-  justify-content: center;
+  /* display: flex; */
+  justify-content: left;
   align-items: center;
+  margin-top: 80px;
+  margin-left: 50px;
+  padding: 20px;
+  /* box-shadow: azure 1px; */
+  /* border-radius: 60px; */
 }
 .profile-pic img {
-  width: 250px;
-  height: 300px;
+  width: 260px;
+  height: 320px;
+  /* box-shadow: 2px 5px rgba(110, 122, 114, 0.783); */
 }
 /* for the Icon section */
 .svj {
@@ -97,6 +177,7 @@ p {
   color: rgba(245, 238, 202, 0.964);
   background-color: rgb(199, 164, 121);
   padding: 3px;
+  transition:  0.6s;
 }
 
 /*ABOUT ME */
@@ -104,24 +185,42 @@ p {
   width: 80%;
   margin: 20px auto;
   padding: 10px;
-  background: rgba(195, 168, 129, 0.802);
-  border: 2px rgb(190, 220, 245) solid;
+  transition:  0.6s;
+  /* background: rgba(195, 168, 129, 0.802); */
+  /* border: 2px rgb(190, 220, 245) solid; */
 }
 #about-me p {
-  color: black;
-  text-align: left;
+  color: aliceblue;
+  text-align: justify;
+  transition:  0.6s;
+  transition-timing-function: ease-in-out;
 }
 #about-me h1 {
-  color: black;
+  color: rgb(238, 239, 218);
 }
 /* for the contact section */
-.contact-info {
-  display: flex;
-  padding: 15px;
-  width: 45vh;
-  background-color: rgb(195, 168, 129);
-  font-size: 10px;
-  margin: auto auto;
+/* .contact-info {
+  display: inline-flex;
+  padding: 10px;
+  width: 80%;
+  margin: 5px 0px 5px  60px;
+} */
+.email{
+  /* margin: 20px;  */
+  margin-left: 650px;
+  padding: 10px;
+  justify-content: center;
+  align-content: center;
+  background-color: rgba(119, 84, 84, 0.785);
+  width: fit-content;
+
+}
+.email :hover {
+  color: rgb(255, 77, 0);
+  /* background-color: rgb(194, 217, 217); */
+  transition:  0.5s;
+  transition-timing-function: linear;
+  transition-timing-function: ease-in-out;
 }
 
 @media (max-width: 500px) {
@@ -129,32 +228,39 @@ p {
     
   }
   .profile-pic img {
-    margin: auto;
+   display: none;
   }
+  .email{
+    margin-left: 200px;
+  }
+
+  /* .welcome-note{
+    display: inline-block;
+  } */
 }
 
 /* RESUME */
 .resume a {
   color: rgb(218, 238, 255);
+  background-color: rgba(119, 84, 84, 0.785);
+  padding: 20px;
+  margin-top: 20px;
 }
 .resume :hover {
   color: rgb(255, 77, 0);
-  background-color: azure;
+  background-color: rgb(194, 217, 217);
+  transition:  0.5s;
+  transition-timing-function: linear;
+  transition-timing-function: ease-in-out;
+}
+
+footer{
+  margin: 10px;
+  padding: 10px;
 }
 /* for the Form contact */
-#container .contact-info {
-  display: grid;
-  justify-content: center;
-}
-#container {
-  box-sizing: border-box;
-  background-color: rgb(175, 111, 22);
-  margin: 1.9rem auto;
-  padding: 15px;
-  min-width: 300px;
-  max-width: 500px;
-}
-label {
+
+/* label {
   padding: 4px;
   width: 7px;
   border-radius: 2;
@@ -183,11 +289,11 @@ input {
 }
 button:hover {
   background-color: rgb(15, 129, 223);
-}
+} */
 
 /* GRIDD */
 
-.grided-container{
+/* .grided-container{
   padding: 10px;
   max-width: 900px;
  
@@ -291,7 +397,7 @@ button:hover {
   background-size: 100% 100%;
   background-position: center;
   
-}
+} */
 @media (max-width: 350x){
   .grided-container{
     display: block;
@@ -321,3 +427,4 @@ button:hover {
   columns: 1;
 }
 } */
+

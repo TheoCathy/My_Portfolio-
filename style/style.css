@@ -1,7 +1,7 @@
 html,
 body {
-  margin: 0;
-  padding: 0px;
+  /* margin: 0; */
+  /* padding: 0px; */
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   line-height: 1.7em;
@@ -160,26 +160,10 @@ p {
 .profile-pic img {
   width: 260px;
   height: 320px;
+  border-radius: 100px;
   /* box-shadow: 2px 5px rgba(110, 122, 114, 0.783); */
 }
-/* for the Icon section */
-.svj {
-  display: flex;
-  justify-content: space-evenly;
-  margin: 50px;
-  background-color: rgba(229, 197, 158, 0.888);
-  margin-top: 12px;
-}
-.svj a {
-  margin: 5px;
-  padding: 2px;
-}
-.svj a :hover {
-  color: rgba(245, 238, 202, 0.964);
-  background-color: rgb(199, 164, 121);
-  padding: 3px;
-  transition:  0.6s;
-}
+
 
 /*ABOUT ME */
 #about-me {
@@ -187,6 +171,7 @@ p {
   margin: 20px auto;
   padding: 10px;
   transition:  0.6s;
+  height: 100vh;
   /* background: rgba(195, 168, 129, 0.802); */
   /* border: 2px rgb(190, 220, 245) solid; */
 }
@@ -200,26 +185,26 @@ p {
   color: rgb(238, 239, 218);
 }
 /* for the contact section */
-.contact-info {
+/* .contact-info {
   align-items: center;
-}
-.email{
+} */
+/* .email{ */
   /* margin: 20px;  */
-  margin-left: 650px;
+  /* margin-left: 650px;
   padding: 10px;
   justify-content: center;
   align-content: center;
   background-color: rgba(119, 84, 84, 0.785);
   width: fit-content;
 
-}
-.email :hover {
-  color: rgb(255, 77, 0);
+} */
+/* .email :hover {
+  color: rgb(255, 77, 0); */
   /* background-color: rgb(194, 217, 217); */
-  transition:  0.5s;
+  /* transition:  0.5s;
   transition-timing-function: linear;
   transition-timing-function: ease-in-out;
-}
+} */
 
 /* @media (max-width: 500px) {
   body {
@@ -246,10 +231,48 @@ p {
   transition-timing-function: linear;
   transition-timing-function: ease-in-out;
 }
+/* for the Contact section */
+.contact-info{
+  height: 100vh;
+}
+.svj {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 10px;
+  
+}
+.svj a {
+  margin: 5px;
+ background-color: rgba(150, 161, 164, 0.766);
+ display: inline-block;
+  /* border-radius: 60px; */
+  box-shadow: 0 0 2px #888;
+  padding: 0.6em 0.7em;
+  border-radius: 50%;
+  /* padding: 0.5em 0.6em; */
+}
+ 
+.svj path{
+  /* padding: 3px; */
+  box-shadow: 0 0 9px #888;
+  padding: 0.9em 1em;
+  border-radius: 50%;
+}
+
+.svj a :hover {
+  color: rgba(245, 238, 202, 0.964);
+  /* background-color: rgb(187, 226, 230); */
+  transition:  0.6s;
+  /* border-radius: 60px; */
+  box-shadow: 0 0 2px #888;
+  padding: 0.3em 0.4em;
+}
 
 footer{
-  margin: 10px;
-  padding: 10px;
+  /* margin: 10px; */
+  /* padding: 10px; */
+  height: 10%;
+  /* background-color: rgba(126, 139, 143, 0.766); */
 }
 
 
@@ -270,6 +293,7 @@ footer{
   }
   .profile-pic img {
     display: none;
+    
    }
    #welcome-note{
     width: 130%;
@@ -348,8 +372,10 @@ footer{
 }
 .card-image{
   display: block;
-  width: 100%;
-  height: 25rem;
+  width: 30rem;
+  /* width: 100%; */
+  height: 20rem;
+  /* height: 25rem; */
   object-fit: cover;
 }
 

@@ -1,3 +1,7 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
 html,
 body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
@@ -22,26 +26,55 @@ header .sticky{
   padding: 5px 100px;
   background: rgba(181, 184, 193, 0.395);
 }
-#navbar ul {
-  display: flex;
-  align-items: center;
+
+/* NAVBAR SECTION */
+.container{
+  /* display: flex; */
+  justify-content: space-between;
   background-color: rgba(126, 139, 143, 0.766);
-  overflow: auto;
+  width: 100%;
+  align-items: center;
+  position: fixed;
+  padding: 10px 20px; 
+   overflow: auto; 
   margin-top: 0%;
   color: rgb(255, 251, 251);
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
   transition: 0.6s;
-  padding: 10px 80px; 
-  z-index: 100;
+  z-index: 100; 
+}
+#navbar{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px; 
+
+}
+h4{
+  color:rgb(255, 251, 251);
+  font-family: 'Courier New', Courier, monospace;
+  font-size: medium;
+}
+#navbar ul {
+  display: flex;
+  align-items: flex-end;
+  /* background-color: rgba(126, 139, 143, 0.766); */
+  /* overflow: auto; */
+  margin-right: 10px;
+  color: rgb(255, 251, 251);
+  /* top: 0; */
+  /* left: 0; */
+  /* width: 100%; */
+  /* transition: 0.6s; */
+  /* padding: 10px 20px;  */
+  /* z-index: 10000; */
 }
 #navbar ul li {
   list-style: none;
   justify-content: center;
   align-items:center;
-  /* padding: 15px; */
+  padding: 0px 5px;
   color: #ffffff;
   position: relative;
   transition: all 0.6s;
@@ -51,7 +84,7 @@ header .sticky{
 
 #navbar ul li a{
   position: relative;
-  margin: 0 15px;
+  margin: 0 20px;
   text-decoration: none;
   letter-spacing: 2px;
   font-weight: 500px;
@@ -73,9 +106,70 @@ header .sticky ul li a{
 #navbar li a:is(:link, :active, :visited ).active{
   color: azure;
   text-decoration: none;
-  padding: 2px;
+  /* padding: 2px; */
 }
 
+.hamburger{
+  position: relative;
+  display: none;
+  /* display: block; */
+  width: 35px;
+  /* height: 35px; */
+  appearance: none;
+  background: none;
+  outline: none;
+  border: none;
+}
+
+.hamburger .bar, .hamburger::after, .hamburger::before{
+  content: '';
+  display: block;
+  width: 100%; 
+  height: 5px;
+  background-color: #ffffff;
+  margin: 6px 0px;
+  transition: 0.5s;
+  
+}
+.hamburger.is-active:before{
+  transform: rotate(-45deg) translate(-8px, 5px);
+}
+.hamburger.is-active:after{
+  transform: rotate(45deg) translate(-9px, -9px);
+}
+.hamburger.is-active .bar{
+  opacity: 0;
+}
+
+.mobile-nav{
+  position: fixed;
+  top: 0;
+  left: 100% ;
+  width: 100%;
+  min-height: 100vh;
+  display: none;
+  z-index: 98;
+  padding-top: 120px;
+  background-color: rgba(45, 59, 51, 0.761);
+  transition: 0.4s;
+}
+.mobile-nav.is-active{
+  left: 0;
+}
+.mobile-nav a{
+  display: block;
+  text-align: center;
+  padding: 12px 16px;
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto 16px;
+  color: #444;
+  text-decoration: none;
+  background-color:rgba(224, 203, 175, 0.808);
+}
+.mobile-nav a:hover{
+  background-color:rgb(225, 211, 194);
+}
 .banner{
   position: relative;
   width: 100%;
@@ -212,19 +306,20 @@ footer{
 
 
 @media (min-width: 300px) and (max-width: 700px){
-  
-#navbar ul {
-    padding: 2px;
-    /* overflow: hidden; */
-    width: 100%;
-  
+  .hamburger{
+  display: block;
+  margin-right: 35px;
+
+  }
+  .mobile-nav{
+  display: block;
+  }
+  .container{
+    display: flex;
   }
   #navbar ul li a{
-    padding: 1px;
-    position: relative;
-    justify-content: space-evenly;
-    text-decoration: none;
-    overflow: hidden;
+
+    display: none;
   }
   .profile-pic img {
     display: none;
@@ -235,13 +330,12 @@ footer{
     padding: 2px;
     margin: 2px 2px 2px 60px;
     align-items: center;
-    /* font-size: s; */
+  
    }
    .resume a{
     width: 120%;
     height: 50px;
     padding: 2px;
-    /* font-size: small; */
    }
    #greetings{
     padding: 10px;
@@ -346,6 +440,10 @@ footer{
 
 
 @media (min-width: 300px) and (max-width: 700px){
+  #projects{
+    margin-top: 50px;
+    padding-top: 200px;
+  }
   .grided-container{
     /* gap: 3rem; */
     margin: 10px;

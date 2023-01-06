@@ -54,4 +54,4 @@ const resNav = document.querySelector(".mobile-nav");
 ham_btn.addEventListener('click', function (){
     ham_btn.classList.toggle('is-active');
     resNav.classList.toggle('is-active');
-});
+}); 

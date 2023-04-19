@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="shortcut icon" type="x-icon" href="IMG_2455-removebg-preview__1_-removebg-preview.png">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style/style.css" />
@@ -11,14 +12,13 @@
   <body>
     <header>
       <div class="container">
-        <!-- <h2>TEE</h2> -->
       <nav id="navbar">
-        <h4><span>TEE</span></h4>
+        <div id="logo"> <img src="IMG_2455-removebg-preview__1_-removebg-preview.png" alt="my image" /></div>
         <ul>
-          <li><a href="index.html" >Home</a></li>
-          <li><a href="#about-me">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact-info">Contact</a></li>
+          <li class="nav_Links"><a href="index.html" >Home</a></li>
+          <li class="nav_Links"><a href="#about-me">About</a></li>
+          <li class="nav_Links"><a href="/projects.html">Projects</a></li>
+          <li class="nav_Links"><a href="#contact-info">Contact</a></li>
           
         </ul>
       </nav>
@@ -30,7 +30,7 @@
     <nav class="mobile-nav">
         <a href="index.html" >Home</a>
         <a href="#about-me">About</a>
-        <a href="#projects">Projects</a>
+        <a href="projects.html">Projects</a>
         <a href="#contact-info">Contact</a>
           
     </nav>
@@ -40,7 +40,7 @@
           <div id="intro">
           <div id="welcome-note">
                 
-                <p>I'm Theodora, a Nigerian based front-end web developer.
+                <p>I'm Theodora, a Nigerian based front-end web developer and a UI/UX designer.
                   Great to have you take look at my portfolio 😊 </p>
                   <br> <br>
                   <div >
@@ -59,17 +59,18 @@
           <div class="profile-pic">
             <img src="theodora_passport.jpeg" alt="my image" />
           </div>
+         
   
       </div>
         <section id="about-me">
-          <h2>ABOUT ME</h2>
+          <div>
+          <h2 class="contact-info">ABOUT ME</h2>
           <p>
             Theodora Nneoma Orji is a software web developer, She has a knack for design and is well-versed in the figma platform, the tool she employs as a UI/UX designer.
             She intends to use her skills to render
             services wherever need be as well as boosting the percentage ladder of
-            women in tech. <br />
-          </p>
-          <p>
+            women in tech. <br/>
+         
             Theodora is a good team player and has very good public speaking and
             commuincations skills.
             Theodora's leadership skills is also a predominant trait, always ready
@@ -81,97 +82,21 @@
             her time on her laptop Researching and also Volunteering. Theodora in
             her very liesure time sometimes spends it Swimming and Drawing.
           </p>
-        </section>
-      <section id="projects">
-        <div>
-          <h2>
-              PROJECTS SO FAR...
-        </h2>
-        </div>
-        <div class="grided-container">
-          <div class="grid-item">
-            <div class="cards">
-             <img class="card-image" src="/WhatsApp Image 2022-12-20 at 03.53.26.jpeg" alt="img"/>
-             <div class="card-content">
-               <h3 class="card-header"> SayIt </h3>
-               <p class="card-text"> A whistleblowing website for reporting of wrong doings in the society.
-                Individuals have the option to report said reports anonymously or not.
-                Built using HTML CSS and Javascript.
-               </p>
-                 <button class="card-btn">
-                   View  <span >&rarr;
-                    <a href="http://sayit-js.netlify.app/" target="_blank"> Here </a>
-                   </span>
-                 </button>
-             </div>
-           </div>
-         </div>
-          <div class="grid-item">
-             <div class="cards">
-              <img class="card-image" src="/Screenshot 2023-01-06 at 09.14.29.jpg" alt="img"/>
-              <div class="card-content">
-                <h3 class="card-header"> My Portfolio </h3>
-                <p class="card-text"> I Built this portfolio using 
-                  HTML CSS and Vanilla javascript</p>
-                  <button class="card-btn">
-                    View <span >&rarr;
-                     <a href="https://github.com/TheoCathy/My_Portfolio-.git" target="_blank"> Here </a>
-                    </span>
-                  </button>
-              </div>
-            </div>
-          </div>
-          <div class="grid-item">
-            <div class="cards">
-             <img class="card-image" src="/Screenshot 2023-01-04 at 04.23.20.jpg" alt="img"/>
-             <div class="card-content">
-               <h3 class="card-header"> Todo app </h3>
-               <p class="card-text"> Built a simple Todo app using ReactJS
-               </p>
-                 <button class="card-btn">
-                   View  <span >&rarr;
-                    <a href="https://github.com/TheoCathy/my-Todo-app.git" target="_blank"> Here </a>
-                 </button>
-             </div>
-           </div>
-         </div>
-          <div class="grid-item">
-            <div class="cards">
-             <img class="card-image" src="/Screenshot 2022-12-22 at 07.09.31.jpg" alt="img"/>
-             <div class="card-content">
-               <h3 class="card-header"> Business Summit </h3>
-               <p class="card-text"> Used Figma to designed a dummy Business Summit Landing page for users to register
-                and book the confrence. 
-               </p>
-                 <button class="card-btn">
-                   View  <span >&rarr;
-                    <a href="https://www.figma.com/proto/YSn5JAAH5TTRMPZOcBA2qx/ZA_D1b(Theo)?node-id=158%3A41" target="_blank"> Here</a>
-                   </span>
-                 </button>
-             </div>
-           </div>
-         </div>
-         <div class="grid-item">
-          <div class="cards">
-           <img class="card-image" src="/Screenshot 2023-01-06 at 21.20.03.jpg" alt="img"/>
-           <div class="card-content">
-             <h3 class="card-header"> Table of users </h3>
-             <p class="card-text"> Built a simple Table to display users data fetch From a Fake Api
-              (JsonPlaceholder) for easy automation of getting a users info
-
-             </p>
-               <button class="card-btn">
-                 View  <span >&rarr;
-                  <a href="https://github.com/TheoCathy/Theo-s-mini-project.git" target="_blank"> Here </a>
-               </button>
-           </div>
-         </div>
-       </div>
-        </div>
-      </section>
-  <footer>
-    <section id="contact-info">
-    <h2>CONTACT ME</h2>
+        <!-- </section> -->
+      </div>
+      <div>
+        <div id="first_contact" >
+          <p class="resume">
+            <a href="mailto:theodoranneoma@gmail.com" target="_blank"
+              >CONTACT ME, LET'S GET YOUR WORK DONE
+              </a
+            >
+          </p>
+      </div>
+          <span>
+    <!-- <section id="about-me"> -->
+   <div>
+      <h2 class="contact-info">CONTACT ME</h2>
       <div class="svj">
         <a href="mailto:theodoranneoma@gmail.com"
                 >
@@ -200,6 +125,7 @@
             <path
               d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
             />
+            
           </svg>
         </a>
 
@@ -236,8 +162,14 @@
           </svg>
         </a>
       </div>
+    </div>
     </section>
+  </span>
+    <footer>
+      All rights reserved. Designed by Theodora 
+     
     </footer>
+    
     <script src="/index.js" ></script>
   </body>
 </html>

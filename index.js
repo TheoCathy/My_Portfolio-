@@ -1,22 +1,27 @@
- window.addEventListener("scroll", function(){
-        var header = document.querySelector("header");
-        header.classList.toggle("sticky", window.scrollY > 0);
-      })
+window.addEventListener("scroll", function () {
+  var header = document.querySelector("header");
+  header.classList.toggle("sticky", window.scrollY > 0);
+});
 
 // JS FOR ACTIVE STATE
 
-const activePage = window.location.hash;
+// const activePage = window.location.hash;
 // console.log(activePage);
-const navLinks = document.querySelectorAll('links ').
-forEach(link => {
-    if (link.href.includes(`${activePage}`)){
-        link.classList.add('active');
-    }
-})
+const navLinks = document.querySelectorAll(".nav_Links");
+navLinks.forEach((navLinks) => {
+  // if (link.href.includes(`${activePage}`)){
+  //     link.classList.add('active');
+  // }
+  navLinks.addEventListener("click", () => {
+    document.querySelector(".active")?.classList.remove("active");
+    navLinks.classList.add("active");
+  });
+});
+
 // navbar a
 
 const li = document.querySelectorAll(".links");
-const sec = document.querySelectorAll("section")
+const sec = document.querySelectorAll("section");
 
 // function activeMenu(){
 //     let len = sec.length;
@@ -28,30 +33,25 @@ const sec = document.querySelectorAll("section")
 // activeMenu();
 // window.addEventListener("scroll", activeMenu);
 
-
-
-
-
-
 // for the typing js
 
-var i =0, text;
-text = "Hi There!  👋🏽  WELCOME..."
+var i = 0,
+  text;
+text = "Hi There!  👋🏽  WELCOME...";
 
-function typing(){
-    if (i < text.length){
-        document.getElementById("greetings").innerHTML +=text.charAt(i);
-        i++;
-        setTimeout(typing,100);
-    }
+function typing() {
+  if (i < text.length) {
+    document.getElementById("greetings").innerHTML += text.charAt(i);
+    i++;
+    setTimeout(typing, 100);
+  }
 }
 typing();
-
 
 const ham_btn = document.querySelector(".hamburger");
 const resNav = document.querySelector(".mobile-nav");
 
-ham_btn.addEventListener('click', function (){
-    ham_btn.classList.toggle('is-active');
-    resNav.classList.toggle('is-active');
-}); 
+ham_btn.addEventListener("click", function () {
+  ham_btn.classList.toggle("is-active");
+  resNav.classList.toggle("is-active");
+});

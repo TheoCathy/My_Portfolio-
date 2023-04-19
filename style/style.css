@@ -221,7 +221,7 @@ p {
 }
 
 #first_contact {
-  width: 80px;
+  width: 100%;
   align-items: flex-start;
 }
 /*ABOUT ME */
@@ -256,10 +256,14 @@ p {
   padding: 15px;
   margin-top: 20px;
   width: fit-content;
+  border-radius: 20px;
 }
 .resume :hover {
   color: rgb(255, 77, 0);
   background-color: rgba(194, 217, 217, 0.815);
+  box-shadow: 0 0 5px rgba(194, 217, 217, 0.815),
+    0 0 20px rgba(194, 217, 217, 0.815), 0 0 60px rgba(194, 217, 217, 0.815),
+    0 0 150px rgba(194, 217, 217, 0.815);
   transition: 0.5s;
   transition-timing-function: linear;
   transition-timing-function: ease-in-out;
@@ -283,7 +287,8 @@ p {
   /* padding: 3px; */
   box-shadow: 0 0 9px #888;
   padding: 0.9em 1em;
-  border-radius: 50%;
+  border-radius: 50px;
+  width: 200px;
 }
 
 .svj a :hover {

@@ -5,35 +5,18 @@ window.addEventListener("scroll", function () {
 
 // JS FOR ACTIVE STATE
 
-// const activePage = window.location.hash;
-// console.log(activePage);
 const navLinks = document.querySelectorAll(".nav_Links");
 navLinks.forEach((navLinks) => {
-  // if (link.href.includes(`${activePage}`)){
-  //     link.classList.add('active');
-  // }
   navLinks.addEventListener("click", () => {
     document.querySelector(".active")?.classList.remove("active");
     navLinks.classList.add("active");
   });
 });
 
-// navbar a
+
 
 const li = document.querySelectorAll(".links");
 const sec = document.querySelectorAll("section");
-
-// function activeMenu(){
-//     let len = sec.length;
-//     while(--len && scrollY + 97 < sec[len].offsetTop){}
-//     li.forEach(ltx => ltx.classList.remove("active"));
-//     li[len].classList.add("active");
-
-// }
-// activeMenu();
-// window.addEventListener("scroll", activeMenu);
-
-// for the typing js
 
 var i = 0,
   text;
@@ -48,6 +31,8 @@ function typing() {
 }
 typing();
 
+// hamburger menu here
+
 const ham_btn = document.querySelector(".hamburger");
 const resNav = document.querySelector(".mobile-nav");
 
@@ -55,3 +40,8 @@ ham_btn.addEventListener("click", function () {
   ham_btn.classList.toggle("is-active");
   resNav.classList.toggle("is-active");
 });
+
+// function toggleMenu() {
+//   var menu = document.querySelector('.menu');
+//   menu.classList.toggle('active');
+// }
